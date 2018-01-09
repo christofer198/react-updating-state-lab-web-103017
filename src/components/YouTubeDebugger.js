@@ -17,7 +17,7 @@ class YouTubeDebugger extends React.Component{
     }
   }
 
-  handleClick = (setting) => {
+  handleClick = (setting, arg) => {
     setState({
       this.state.settings: Object.assign({}, this.state.settings, {
         `${setting}`: 12,
