@@ -17,10 +17,10 @@ class YouTubeDebugger extends React.Component{
     }
   }
 
-  handleClick = () => {
+  handleClick = (setting) => {
     setState({
       this.state.settings: Object.assign({}, this.state.settings, {
-        bitrate: 12,
+        : 12,
       })
     })
   }
