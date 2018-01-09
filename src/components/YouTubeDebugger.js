@@ -20,7 +20,7 @@ class YouTubeDebugger extends React.Component{
   handleClick = (setting) => {
     setState({
       this.state.settings: Object.assign({}, this.state.settings, {
-        : 12,
+        `${setting}`: 12,
       })
     })
   }
