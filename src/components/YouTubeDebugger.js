@@ -20,15 +20,15 @@ class YouTubeDebugger extends React.Component{
   handleClick = (setting, arg) => {
     setState({
       this.state.settings: Object.assign({}, this.state.settings, {
-        `${setting}`: 12,
+        `${setting}`: `${arg}`,
       })
     })
   }
 
   render(){
     return(
-      <button className="bitrate" onClick={this.handleClick('bitrate')} >Bitrate</button>
-      <button className="resolution" onClick={this.handleClick('resolution')} >Bitrate</button>
+      <button className="bitrate" onClick={this.handleClick('bitrate', '12')} >Bitrate</button>
+      <button className="resolution" onClick={this.handleClick('resolution', '720p')} >Bitrate</button>
     )
   }
 }
